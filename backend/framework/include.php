@@ -25,7 +25,7 @@ include_once("classes/classes.php");
 # =========================================================================
 
 # Comments
-include_once("modules/comments/libraries/comments.inc.php");
+
 
 # =========================================================================
 # THE END
