@@ -14,7 +14,8 @@ $_GLOBALS['log_file']													= "/var/log/gina_world/" . date("Ymd") . ".log
 $_GLOBALS['base_dir']													= dirname(dirname(dirname(__FILE__))) . "/";
 $_GLOBALS['base_url']													= $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']) . "/../../";
 $_GLOBALS['max_results']												= 20; 
-$_GLOBALS['default_page']												= "signup";
+$_GLOBALS['default_page']												= "home";
+$_GLOBALS['default_action']												= "display";
  
  # Database Connectivity
 $_GLOBALS['mysql_host']													= "localhost";

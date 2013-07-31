@@ -1,10 +1,9 @@
 <?php
 /**
- * Project
- * 
- * @author Ralfe Poisson <ralfepoisson@gmail.cm>
- * @version 2.0
- * @package Project
+ *Project
+ * @author Elie Ishimwe <elieish@gmail.com>
+ * @version 1.0
+ * @package Project 
  */
  
 # ===================================================

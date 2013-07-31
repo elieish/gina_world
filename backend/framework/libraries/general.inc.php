@@ -41,6 +41,11 @@ function get_user_username() {
 	}
 }
 
+function now() {
+	return date("Y-m-d H:i:s");
+}
+
+
 function is_mobile_browser() {
 	$mobile_browser = '0';
 	
