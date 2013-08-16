@@ -76,6 +76,7 @@ $(".previous").click(function(){
 });
 
 $(".submit").click(function(){
+	var uid 		= document.getElementById("id").value;
 	var email 		= document.getElementById("email").value;
 	var pass  		= document.getElementById("pass").value;
 	var cpass  		= document.getElementById("cpass").value;
@@ -86,12 +87,13 @@ $(".submit").click(function(){
 	var lname		= document.getElementById("lname").value;
 	var phone		= document.getElementById("phone").value;
 	var address		= document.getElementById("address").value;
-	save_signup_entry(email,pass,cpass,twitter,facebook,gplus,fname,lname,phone,address);
-	alert("ishimwe");
-})
+	save_signup_entry(uid,email,pass,cpass,twitter,facebook,gplus,fname,lname,phone,address);
+});
 
-function save_signup_entry(email,pass,cpass,twitter,facebook,gplus,fname,lname,phone,address) {
+
+function save_signup_entry(uid,email,pass,cpass,twitter,facebook,gplus,fname,lname,phone,address) {
     var url = 'ajax.php?action=save_signup_entry';
+    url    += '&id='      	 + uid;
     url    += '&email='      + email;
     url    += '&pass='       + pass;
     url    += '&cpass='      + cpass;

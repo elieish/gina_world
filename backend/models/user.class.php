@@ -33,15 +33,13 @@ class User extends Model {
 		}
 	}
 	
-	/**
-	 * Displays the user form
-	 */
-	public function item_form() {
+
+	public function item_form($action) {
 		# Global Variables
 		global $_db, $cur_page, $_GLOBALS;
 		
 		# Generate Form
-		$form														= new Form("?p=employees&action=save");
+		$form														= new Form($action);
 		//			Label				Type			Name				Value
 		$form->add(""					, "hidden"				, "uid"						, $this->uid);
 		$form->add_select("Type"		, "user_type_id"		, $this->user_type_id		, user_type_select());

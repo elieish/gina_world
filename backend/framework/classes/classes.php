@@ -38,6 +38,12 @@ include_once("template.class.php");
 # TestManager
 include_once("testManager.class.php");
 
+# PHPMailer 
+include_once("class.phpmailer.php");
+
+# SMTP 
+include_once("class.smtp.php");
+
 # =========================================================================
 # CONSTRUCT SPECIAL OBJECTS
 # =========================================================================

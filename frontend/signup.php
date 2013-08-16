@@ -14,7 +14,7 @@ Application::include_models();
 
 function display() {
 	
-    $file    		=    dirname(__FILE__)."/html/signup.html";
+    $file    		=    dirname(__FILE__)."/html/signup.html";	
 	$template		=	 new Template($file);
 	$html			=    $template->toString();
 	

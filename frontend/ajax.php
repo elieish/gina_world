@@ -23,11 +23,8 @@ Application::include_helpers();
 # ===================================================
 
 function save_signup_entry() {
-    global $_db, $validator;
-	
-	
-	
- 	$uid            = $validator->validate($_GET['uid'],   "Integer");
+    global $_db, $validator;	
+ 	$uid            = $validator->validate($_GET['id'],   "Integer"); print"k";die;
     $email          = $validator->validate($_GET['email'], "String");
     $pass			= $validator->validate($_GET['cpass'], "String"); 
 	$fname			= $validator->validate($_GET['fname'], "String");
@@ -37,9 +34,9 @@ function save_signup_entry() {
         if ($uid > 0) {
          
          $_db->update(
-                    '',
+                    'users',
                     array(
-                        
+                        'password'  	=> md5($pass),
                                               
                     ),
                     array(
@@ -78,7 +75,7 @@ function save_signup_entry() {
 # ===================================================
 
 if (isset($_GET['action'])) {
-	$action																= $_GET['action'];
+	$action								= $_GET['action'];
 	if (function_exists($action)) {
 		$action();
 	}
