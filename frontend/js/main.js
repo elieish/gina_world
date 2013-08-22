@@ -75,7 +75,7 @@ $(".previous").click(function(){
 	});
 });
 
-$(".submit").click(function(){
+$(".submit").click(function(){	
 	var uid 		= document.getElementById("id").value;
 	var email 		= document.getElementById("email").value;
 	var pass  		= document.getElementById("pass").value;
@@ -89,6 +89,12 @@ $(".submit").click(function(){
 	var address		= document.getElementById("address").value;
 	save_signup_entry(uid,email,pass,cpass,twitter,facebook,gplus,fname,lname,phone,address);
 });
+
+$(".submit2").click(function(){
+	document.write("amakuru");
+});
+
+
 
 
 function save_signup_entry(uid,email,pass,cpass,twitter,facebook,gplus,fname,lname,phone,address) {

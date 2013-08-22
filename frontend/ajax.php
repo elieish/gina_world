@@ -24,7 +24,7 @@ Application::include_helpers();
 
 function save_signup_entry() {
     global $_db, $validator;	
- 	$uid            = $validator->validate($_GET['id'],   "Integer"); print"k";die;
+ 	$uid            = $validator->validate($_GET['id'],   "Integer");
     $email          = $validator->validate($_GET['email'], "String");
     $pass			= $validator->validate($_GET['cpass'], "String"); 
 	$fname			= $validator->validate($_GET['fname'], "String");

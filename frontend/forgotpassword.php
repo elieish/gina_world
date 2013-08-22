@@ -137,7 +137,10 @@ function newPass() {
 		$template				= new Template($file,$vars);
 		$html					= $template->toString();
 		print $html;
-		print"there is a record in the database".$file;
+	
+	#Redirect
+	//redirect("login.php");
+	
 	}
 		
 }
