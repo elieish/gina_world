@@ -25,7 +25,7 @@ class Page extends AbstractPage {
 		
 	
 		
-		$file															= dirname(dirname(dirname(__FILE__))) . "/frontend/html/home.html";
+		$file															= dirname(dirname(dirname(__FILE__))) . "/frontend/html/shoppingcart.html";
 		$vars															= array(
 																					""
 																				);

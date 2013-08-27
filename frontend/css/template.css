@@ -1,0 +1,672 @@
+*::-moz-selection {
+    background: none repeat scroll 0 0 #EA4C89;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+a:link, a:visited {
+    color: #4083A9;
+    outline: medium none;
+    text-decoration: none;
+}
+
+
+a img {
+    border: medium none;
+}
+
+a.tagline-action {
+    border-radius: 5px 5px 5px 5px;
+    font-size: 12px;
+    margin: 0 0 0 5px;
+    padding: 5px 12px;
+    position: relative;
+    top: -1px;
+}
+
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #444444;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 62.5%;
+    text-rendering: optimizelegibility;
+}
+
+body#user-profile li#t-profile > a, body#shots #nav li#t-shots > a, body#players #nav li#t-players > a, body#explore #nav li#t-explore > a, body#teams #nav li#t-teams > a, body#jobs #nav li#t-jobs > a, body#upld #nav li#t-upld > a, body#about #nav li#t-about > a, body#incoming-activity li#t-activity > a, body#signup #nav li#t-signup > a {
+    background: url("/images/tab-underlay.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0.35);
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+body#shots #wrap ul.tabs, body#explore #wrap ul.tabs, body#players #wrap ul.tabs, body#admin #wrap ul.tabs {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #DDDDDD;
+    margin-top: -2px;
+}
+
+body#shots #wrap ul.tabs li.active a, body#explore #wrap ul.tabs li.active a, body#players #wrap ul.tabs li.active a, body#admin #wrap ul.tabs li.active a {
+    background: none repeat scroll 0 0 transparent;
+}
+
+body#shots #wrap ul.tabs li a, body#explore #wrap ul.tabs li a, body#players #wrap ul.tabs li a, body#admin #wrap ul.tabs li a {
+    padding: 0 0 18px;
+}
+
+
+body#shots ol.dribbbles li.group {
+    margin: 0 3.09278% 30px 0;
+    width: 22.6804%;
+}
+
+
+#content {
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 970px;
+    padding: 0;
+    position: relative;
+}
+
+
+div.notice {
+    background: url("/images/alert-lines.png") repeat-x scroll left top #618FB9;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #85AED3;
+    color: #FFFFFF;
+    font-size: 1.7em;
+    font-weight: normal;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+div.notice h2 {
+    font-weight: normal;
+    margin: 0 auto;
+    text-align: center;
+    width: 970px;
+}
+
+div.notice-alert h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.3;
+}
+div.notice-alert a.close {
+    opacity: 0.6;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+div.notice-alert {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    border-radius: 10px 10px 10px 10px;
+    color: #CCCCCC;
+    display: none;
+    margin-left: 125px;
+    padding: 15px 30px;
+    position: fixed;
+    text-align: center;
+    top: 70px;
+    width: 690px;
+    z-index: 999;
+}
+
+div.secondary {
+    font-size: 1.2em;
+}
+
+div.secondary h3.tab a span.meta {
+    color: #999999;
+}
+
+div.secondary h3 span.meta {
+    font-weight: normal;
+    line-height: 12px;
+}
+
+div.secondary div.equipment-pitch img {
+    float: left;
+    margin: 0 15px 0 0;
+}
+div.col-33 {
+    float: left;
+    margin: 0 3.09278% 0 0;
+    width: 31.2715%;
+}
+div.secondary h3.tab:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+div.col-33-last {
+    margin-right: 0;
+}
+
+div.extra div.ad {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 12px;
+    padding: 0;
+    text-align: left;
+}
+div.ad {
+    border-radius: 6px 6px 6px 6px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+div.extra div.ad a.flag {
+    display: none;
+}
+div.extra div.ad p {
+    line-height: 1.5;
+}
+
+div.extra div.ad a img.ad {
+    float: left;
+    margin: 0 15px 0 0;
+}
+div.ad a img {
+    display: block;
+}
+div.ad a.flag {
+    color: #666666;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 0 6px;
+    padding: 0;
+    text-transform: uppercase;
+}
+div.secondary.extra {
+    border-top: 2px solid #DDDDDD;
+    clear: both;
+    float: left;
+    margin: 55px 0 0;
+    padding: 45px 0 0;
+    width: 100%;
+}
+div.secondary div.equipment-pitch p.copy {
+    padding-top: 10px;
+}
+div.secondary p.copy {
+    color: #777777;
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 0 0 25px;
+}
+div.secondary.extra h3, div.secondary.extra h3.tab {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+div.secondary h3 {
+    font-size: 14px;
+    line-height: 1;
+}
+.form-sub, a.form-sub-big, a.form-sub-teams, a.form-sub, a.form-sub-big, a.form-sub-teams, div.comment-body form.comment button[type="submit"] {
+    background: url("/images/glass-light.png") repeat-x scroll 0 50% #EA4C89;
+    border: medium none;
+    color: #FFFFFF;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.group {
+    position: relative;
+}
+
+.group:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    font-size: 100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#header {
+    background: none repeat scroll 0 0 #333333;
+}
+
+#header-inner {
+    margin: 0 auto;
+    max-width: 970px;
+    padding: 15px 12px;
+    position: relative;
+}
+
+hr, .hide {
+    display: none;
+}
+
+input.search-text {
+    background: url("/images/icon-search.png") no-repeat scroll 7px 50% white;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    color: #BBBBBB;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    padding: 5px 5px 5px 25px;
+    width: 190px;
+}
+
+#logo {
+    float: left;
+    margin: 2px 20px 0 0;
+}
+
+#logo a, #logo span {
+    background: url("/images/dribbble-tm.png?2") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 26px;
+    transition: opacity 0.2s ease 0s;
+    width: 100px;
+}
+
+#logo img {
+    height: 0;
+}
+
+li.fav a, li.fav span {
+    background-image: url("/images/icon-hearts.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+}
+
+
+h1.compact {
+    color: #777777;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.3;
+}
+h1.compact strong {
+    color: #333333;
+}
+
+#main.main-full, #main.full-800 {
+    float: none;
+    max-width: 970px;
+    width: auto;
+}
+
+#main {
+    font-size: 1.2em;
+}
+
+#nav {
+    color: #777777;
+    margin: 0 246px 0 20px;
+    padding: 2px 0 0;
+}
+
+#nav li#t-search {
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+}
+#nav > li {
+    float: left;
+    font-size: 1.25em;
+    line-height: 1;
+}
+
+#nav li > a {
+    color: #AAAAAA;
+    display: block;
+    padding: 6px 10px 7px;
+    text-decoration: none;
+}
+
+
+#nav li ul.tabs {
+    background: none repeat scroll 0 0 padding-box #555555;
+    border-radius: 0 6px 6px 6px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    display: none;
+    float: left;
+    padding: 5px 0;
+    position: absolute;
+    width: 160px;
+    z-index: 999;
+}
+
+
+#nav li ul.tabs li {
+    clear: left;
+    margin: 0;
+    width: 100%;
+}
+#nav li ul.tabs li a {
+    background: none repeat scroll 0 0 transparent;
+    box-shadow: none;
+    color: #BBBBBB;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px 15px;
+}
+#nav li#t-signup a span {
+    background: url("/images/icon-signup.png") no-repeat scroll 0 50% transparent;
+    padding-left: 26px;
+}
+#nav li#t-profile, #nav li#t-signin, #nav li#t-activity, #nav li#t-upld {
+    float: right;
+}
+
+ol.dribbbles li.group {
+    float: left;
+    padding: 0;
+    position: relative;
+}
+
+ol.dribbbles li div.dribbble {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    clear: left;
+    position: relative;
+}
+
+
+ol.dribbbles li div.dribbble div.dribbble-shot {
+    padding: 10px;
+}
+
+ol.dribbbles li div.dribbble-img {
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 75%;
+}
+
+ol.dribbbles li div.dribbble-img img {
+    max-height: 150px;
+    max-width: 100%;
+}
+ol.dribbbles li div.dribbble div.extras {
+    bottom: 7px;
+    left: 10px;
+    position: absolute;
+    z-index: 2;
+}
+
+ol.dribbbles li div.dribbble a.dribbble-over {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.96);
+    bottom: 30px;
+    color: #888888;
+    font-size: 12px;
+    left: 0;
+    line-height: 2;
+    margin: 0;
+    overflow: hidden;
+    padding: 20px;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+
+ol.dribbbles li div.dribbble span.has-rebounds {
+    background-image: url("/images/icon-rebound-source.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #8ABA56;
+    font-size: 0.78em;
+    line-height: 1.5;
+    padding: 0 0 0 9px;
+}
+
+
+
+ol.dribbbles li div.dribbble span.attachments-mark {
+    float: left;
+}
+
+ol.dribbbles li h2 {
+    color: #999999;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin: 10px 0 0;
+    max-height: 16px;
+    padding: 0 0 0 10px;
+    vertical-align: middle;
+}
+
+ol.dribbbles li h2 a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ol.dribbbles li h2 span.badge {
+    font-size: 9px;
+    line-height: 16px;
+    opacity: 0;
+    transition: opacity 0.2s ease 0s;
+    vertical-align: top;
+}
+
+ol.dribbbles li h2 a img {
+    border-radius: 2px 2px 2px 2px;
+    float: left;
+    margin: 0 4px 0 0;
+    max-height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+
+
+ol.dribbbles li div.dribbble a.dribbble-over strong {
+    color: #444444;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0 4px;
+}
+
+ol.dribbbles li div.dribbble a.dribbble-over em {
+    bottom: 10px;
+    color: #999999;
+    display: block;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: bold;
+    left: 20px;
+    line-height: 1;
+    margin: 0 0 3px;
+    position: absolute;
+}
+ol, ul {
+    list-style: none outside none;
+}
+
+ol.dribbbles li div.dribbble div.extras {
+    bottom: 7px;
+    left: 10px;
+    position: absolute;
+    z-index: 2;
+}
+ol.dribbbles li div.dribbble div.extras a, ol.dribbbles li div.dribbble div.extras .attachments-mark {
+    display: none;
+}
+
+ol.dribbbles li div.dribbble span.rebound-mark {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+#search input {
+    vertical-align: middle;
+}
+
+#toggle-nav {
+    display: none;
+}
+
+.tab a {
+    background: url("/images/icon-grey-arrow.png") no-repeat scroll 100% 4px transparent;
+    color: #444444;
+    float: left;
+    font-weight: bold;
+    padding: 0 13px 8px 0;
+}
+
+ul.tools li {
+    color: #AAAAAA;
+    display: inline;
+    float: right;
+    font-size: 11px;
+    line-height: 1;
+    margin: 0 0 0 12px;
+    width: auto;
+}
+
+ul.tools li a {
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+ul.tools li.views {
+    background-image: url("/images/icon-views-sm.png");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    border-left: medium none;
+    margin-left: 0;
+    padding-left: 18px;
+}
+#wrap {
+    background: url("/images/noise-f1.gif") repeat scroll -70% 0 #F0F0F0;
+    align:center;
+}
+
+#wrap-inner {
+    padding: 20px 12px 30px;
+}
+
+#wrap ul.tabs:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#wrap ul.tabs {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+}
+
+#wrap ul.tabs li {
+    color: #BBBBBB;
+    float: left;
+    line-height: 1;
+    margin: 0 20px 0 0;
+    position: relative;
+}
+
+#wrap ul.tabs li.active a, #wrap ul.tabs li.active span.empty, body#shots #wrap ul.tabs li.active a, body#explore #wrap ul.tabs li.active a, body#players #wrap ul.tabs li.active a, body#admin #wrap ul.tabs li.active a {
+    color: #444444;
+    font-weight: bold;
+}
+#wrap ul.tabs li a, #wrap ul.tabs li span.empty {
+    display: block;
+    text-decoration: none;
+}
+#footer {
+    border-top: 1px solid #DDDDDD;
+}
+#footer-inner {
+    color: #999999;
+    font-size: 12px;
+    margin: 0 auto;
+    max-width: 970px;
+    padding: 30px 10px 20px;
+}
+#footer div.footer-links {
+    float: left;
+    margin: 0 30px 20px 0;
+    width: 220px;
+}
+#footer p.logo {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#footer p {
+    clear: left;
+    margin: 0 15px 10px 0;
+}
+
+#footer a {
+    color: #777777;
+    font-weight: bold;
+}
+
+#footer p.logo a img {
+    float: left;
+    margin: 0 10px 0 0;
+    transition: opacity 0.2s ease 0s;
+}
+
+#footer div.footer-links h3 {
+    color: #777777;
+    font-size: 12px;
+    margin: 0 0 4px;
+}
+
+#footer div.footer-links ul li a {
+    color: #999999;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+
+#footer a.footer-twitter {
+    background-image: url("/images/icon-twitter-footer.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 15px 0 0;
+    padding: 1px 0 0 20px;
+}
+h4#pixels-total {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 6px;
+    color: #777777;
+    float: right;
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.4;
+    padding: 0 0 0 54px;
+    position: relative;
+    width: 166px;
+}
+
+

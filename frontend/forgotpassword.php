@@ -4,7 +4,7 @@
  * @author Elie Ishimwe <elieish@gmail.com>
  * @version 1.0
  * @package Project 
- * @resource stackoverflow.com/questions/1102781/best-way-for-a-forgot-password-implementation
+ * @link stackoverflow.com/questions/1102781/best-way-for-a-forgot-password-implementation
  */
  
 include_once (dirname(dirname(__FILE__)). "/backend/framework/include.php");

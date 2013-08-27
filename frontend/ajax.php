@@ -62,9 +62,10 @@ function save_signup_entry() {
             ); 
        
        
-      echo "OK";
+      echo "You have been successfull registered";
 	  
     }
+	
 }
 
 
