@@ -329,6 +329,125 @@ function paginated_listing($query, $this_page="", $prefix="") {
 	return $html;
 }
 
+function paginated_listing2($query, $this_page="", $prefix="",$sector="") {
+	# GLobal Variables
+	global $_GLOBALS, $cur_page, $_db;
+	
+	# Local Variables
+	$head 																= array();
+	
+	# Get Page Variables
+	$page																= (isset($_GET['results_page']))? $_GET['results_page'] : 1;
+	$p																	= (isset($_GET['p']))? $_GET['p'] : 'home';
+	$this_page															= (strlen($this_page))? $this_page : "?p=" . $p;
+	
+	# Get Count
+	$num_records														= get_query_count($query);
+	$num_pages															= ceil($num_records / $_GLOBALS['max_results']);
+	
+	# Get Starting Record
+	$starting_record													= ($page - 1) * $_GLOBALS['max_results'];
+	
+	# Get Body
+	$data																= $_db->fetch($query . " LIMIT {$starting_record}, {$_GLOBALS['max_results']}");
+	$body																= array();
+	$row_num															= 0;
+	foreach ($data as $item) {
+		$item_arr														= get_object_vars($item);
+		$body[$row_num]													= array();
+		foreach ($item_arr as $key => $value) {
+			$body[$row_num][]											= $value;
+		}
+		$row_num++;
+	}
+	
+	# Generate Headings
+	$obj_data															= get_object_vars($item);
+	foreach ($obj_data as $item => $content) {
+		$head[]															= $item;
+	}
+	
+	# Generate Headings
+	$headings															= "
+		<tr>
+	";
+	foreach ($head as $item) {
+		$headings														.= "
+			<th>{$item}</th>
+			";
+	}
+	$headings															.= "
+		</tr>
+	";
+	
+	# Generate rows
+	
+	$rows_num														=0;
+	$rows
+																	= "";
+	foreach ($body as $row) {
+		if($rows_num%3==0)
+		{
+			$rows														.="<tr>";
+		}	
+		$rows															.= "
+		<td>
+		";
+		foreach ($row as $item) {
+			$rows														.= "
+			{$item}</br>
+			";
+		}
+		$rows															.= "
+		</td>
+		";
+		$rows_num	=$rows_num	+1;
+	}
+	
+	# Output Page selection
+	$page_select														= "";
+	if ($num_records > $_GLOBALS['max_results']){
+		$page_select 													.= "<script>\n";
+		$page_select 													.= "	function gotoURL(me){\n";
+		$page_select 													.= "		window.location.replace('$this_page&results_page=' + me.value+'&sector=$sector');\n";
+		$page_select 													.= "}\n";
+		$page_select 													.= "</script>\n";
+		$page_select 													.= "<div align='right' style='padding:0;margin:0;'>\n";
+		$page_select 													.= "	Page : <SELECT name='results_pages' onchange='gotoURL(this);'>\n";
+		for ($x = 0; $x < $num_pages; $x++){
+			$selected													= ($page == ($x + 1))? " SELECTED" : "";
+			$page_select 												.= "		<OPTION value='" . ($x + 1) . "'{$selected}>" . ($x + 1) . "</OPTION>\n";
+		}
+		$page_select 													.= "	</SELECT>\n";
+		$page_select 													.= "</div>\n";
+	}
+	
+	# Navigation Buttons
+	$buttons															= "";
+	if ($num_records > $_GLOBALS['max_results']){
+		$previous_link													= ($page > 1)? "$this_page&sector=$sector&$prefix" . "results_page=" . ($page - 1) : "";
+		$next_link														= (($page * $_GLOBALS['max_results']) < $num_records)? "$this_page&sector=$sector&$prefix" . "results_page=" . ($page + 1) : "";
+		$buttons 														.= new_line() . nav_buttons($previous_link, $next_link);
+	}
+	
+	# Generate HTML
+	$html																= "
+	{$page_select}
+	
+	<table class='table table-striped table-hover'>
+		
+		{$rows}
+	</table>
+	
+	{$buttons}
+	";
+	
+	# Return HTML
+	return $html;
+}
+
+
+
 /**
  * Generates the HTML of a table displaying a list of data with 
  * column headings.
